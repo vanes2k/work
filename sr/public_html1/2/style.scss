@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body {
+    font-family: "Playfair Display", serif;
+}
+@keyframes pre {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(46px);
+        transform: translateY(46px);
+    }
+}
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon-scroll {
+    position: absolute;
+    left: 50%;
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -75px;
+    box-shadow: inset 0 0 0 3px #fff;
+    border-radius: 25px;
+    &:before {
+        position: absolute;
+        left: 50%;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-left: -4px;
+        top: 8px;
+        border-radius: 4px;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+    }
+}
+.bg-s {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.preloader {
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 256px;
+        animation: pre 5s infinite linear;
+    }
+}
+.menu {
+}
+.main-col {
+    .column {
+        &:first-child {
+            transform: translateX(+5rem);
+        }
+        &:last-child {
+            transform: translateX(-5rem);
+        }
+    }
+}
+.bbg {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.wbg {
+    background-color: wheat;
+    color: black;
+    padding: 20px;
+}
+.x {
+    width: 128;
+    height: auto;
+}
+.vbg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.hov-bg {
+    position: relative;
+    transition: all 0.2s;
+    color: black;
+    border: 2px solid black;
+    background: white;
+    .back {
+        transition: all 1s;
+        position: absolute;
+        background: black;
+        height: 100%;
+        width: 0;
+        z-index: 1;
+    }
+    .in {
+        transition: all 1s;
+        position: relative;
+        z-index: 2;
+        color: black;
+    }
+    &:hover {
+        .back {
+            width: 100%;
+        }
+        .in {
+            color: white;
+        }
+    }
+}
+.price-list {
+    background-position: center;
+    background-size: cover;
+    li {
+        position: relative;
+        padding-left: 1.5em;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: -0.2em;
+            content: ">";
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+    }
+}
+.flip {
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+    &:hover{
+        .inner{
+            transform: rotateY(180deg);
+        }
+    }
+    .inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.4s;
+        transform-style: preserve-3d;
+        .back, .front{
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+           .info{
+                padding: 1em;
+                .bbg{
+                    padding: 0.2em !important;
+                }
+                .wbg{
+                    padding: 0.2em;
+                }
+                
+           }
+        }
+        .front{
+            background-color: blue;
+        }
+        .back{
+            background-color: black;
+            transform: rotateY(180deg);
+        }
+        
+    }
+}
+.bblock{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+.bdblock{
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+
+}
+@media (max-width: 961px) {
+    .main-col {
+        .column {
+            &:first-child {
+                transform: translateX(0);
+            }
+            &:nth-child(2) {
+                img {
+                    max-width: 128px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &:last-child {
+                transform: translateX(0);
+            }
+        }
+    }
+}

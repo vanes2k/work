@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+        integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+        integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="[[++site_url]]/tmp/style.css">  [[$metrika]]
+    <title>[[*pagetitle]]</title>
+</head>
+
+<body>
+    [[$menu]]
+    <section class="section">
+        <div class="container">
+         <div class="columns  is-vcentered">
+             <div class="column  is-hidden-mobile">
+                 <h1 class="title mc">[[*longtitle]]</h1>
+                 <p>
+                     [[*PriceText]]
+                 </p>
+             </div>
+             <div class="column">
+               <div class="slider-price">
+                [[getImageList?
+                &tvname=`PriceCour`
+                &tpl=`@CODE:<img src="[[++site_url]][[+image]]">
+              `]]
+               </div>
+             </div>
+             <div class="column  is-hidden-desktop">
+                <h1 class="title mc">[[*longtitle]]</h1>
+                <p>
+                    [[*PriceText]]
+                </p>
+            </div>
+         </div>
+        </div>
+       </section>
+       <section class="section">
+           <div class="container">
+               <div class="columns is-multiline is-centered">
+               
+                 [[getImageList?
+                 &tvname=`Prices`
+                 &tpl=`pricesTpl`
+               ]]
+               </div>
+           </div>
+       </section>
+    [[$footer]]
+</body>
+<script src="[[++site_url]]/tmp/script.js"></script>
+
+</html>

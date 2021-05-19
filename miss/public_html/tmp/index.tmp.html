@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+        integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+        integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="[[++site_url]]/tmp/style.css">  [[$metrika]]
+    <title>Miss Chaplin Beauty Shop - салон красоты - Пушкино - [[*pagetitle]]</title>
+
+</head>
+
+<body>
+    [[$menu]]
+    <div class="slider-main-container">
+        <div class="slider-main">
+            [[getImageList?
+            &tvname=`cour`
+            &tpl=`@CODE:<img src="[[++site_url]][[+image]]">
+            `]]
+        </div>
+        <div class="prev-btn">
+            <div class="btn">
+                <button onclick="sliderMain.goTo('prev');"><i
+                        class="fas fa-arrow-circle-left is-size-3-desktop"></i></button>
+            </div>
+        </div>
+        <div class="next-btn">
+            <div class="btn">
+                <button onclick="sliderMain.goTo('next');"><i
+                        class="fas fa-arrow-circle-right is-size-3-desktop "></i></button>
+            </div>
+        </div>
+    </div> 
+    <section class="section">
+        <div class="container">
+            <div class="columns has-text-centered is-centered has-text-weight-bold">
+                <div class="column is-3">
+                    <img src="[[++site_url]]tmp/img3/010-diploma.png" style="max-width: 100px;" alt="" srcset="">
+                    <p class="mc is-size-5">
+                        БОЛЬШОЙ ОПЫТ РАБОТЫ МАСТЕРОВ
+                    </p>
+                </div>
+                <div class="column is-3">
+                    <img src="[[++site_url]]tmp/img3/025-nails.png" style="max-width: 100px;" alt="" srcset="">
+                    <p class="mc is-size-5">
+                        ИДЕАЛЬНЫЙ МАНИКЮР НА ДОЛГОЕ ВРЕМЯ
+                    </p>
+                </div>
+                <div class="column is-3">
+                    <img src="[[++site_url]]tmp/img3/014-hair-conditioner.png" style="max-width: 100px;" alt="" srcset="">
+                    <p class="mc is-size-5">
+                       ПРОФЕССИОНАЛЬНАЯ КОСМЕТИКА И МАТЕРИАЛЫ
+                    </p>
+                </div>
+                <div class="column is-3">
+                    <img src="[[++site_url]]tmp/img3/027-scissors.png" style="max-width: 100px;" alt="" srcset="">
+                    <p class="mc is-size-5">
+                        БОЛЬШОЙ СПЕКТР УСЛУГ ПО НИЗКИМ ЦЕНАМ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="has-background-light py-4">
+        <div class="nice-block">
+            <h2 class="title has-text-black-bis">
+                Наши услуги
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="columns us-block mb-4">
+                <div class="column">
+                    <img src="[[++site_url]]tmp/img/us1.jpg" alt="" srcset="">
+                    <a class="inner-container" href="?id=2">
+                        <div class="inner-content has-text-centered">
+                            <p class="has-text-weight-bold is-size-4">МАНИКЮР<br>ПЕДИКЮР</p>
+                            <span class="inner-btn">
+                                Посмотреть услуги и цены
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column">
+                    <img src="[[++site_url]]tmp/img/us2.jpg" alt="" srcset="">
+                    <a class="inner-container" href="?id=4">
+                        <div class="inner-content has-text-centered">
+                            <p class="has-text-weight-bold is-size-4">СТРИЖКА И ОКРАШИВАНИЕ<br>ВОЛОС</p>
+                            <span class="inner-btn">
+                                Посмотреть услуги и цены
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column">
+                    <img src="[[++site_url]]tmp/img/us3.jpg" alt="" srcset="">
+                    <a class="inner-container" href="?id=5">
+                        <div class="inner-content has-text-centered">
+                            <p class="has-text-weight-bold is-size-4">УКЛАДКА<br>ВОЛОС</p>
+                            <span class="inner-btn">
+                                Посмотреть услуги и цены
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column">
+                    <img src="[[++site_url]]tmp/img/us4.jpg" alt="" srcset="">
+                    <a class="inner-container" href="?id=6">
+                        <div class="inner-content has-text-centered">
+                            <p class="has-text-weight-bold is-size-4">КОСМЕТОЛОГИЯ</p>
+                            <span class="inner-btn">
+                                Посмотреть услуги и цены
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title main-text has-text-black-bis">
+                <span>
+                    Большая команда профессионалов и 200 квадратов творческого пространства
+                </span>
+            </h2>
+            <div class="columns images">
+                <a href="[[++site_url]]/tmp/conimgs/DBdRZwYjEYY.jpg" data-lightbox="images" class="column">
+                    <img src="[[++site_url]]/tmp/conimgs/DBdRZwYjEYY.jpg" alt="">
+                </a>
+                <a href="[[++site_url]]/tmp/conimgs/gvW52eDJdVk.jpg" data-lightbox="images" class="column"> <img
+                        src="[[++site_url]]/tmp/conimgs/gvW52eDJdVk.jpg" alt=""></a>
+                <a href="[[++site_url]]/tmp/conimgs/sryvGy32_oE.jpg" data-lightbox="images" class="column"> <img
+                        src="[[++site_url]]/tmp/conimgs/sryvGy32_oE.jpg" alt=""></a>
+                <a href="[[++site_url]]/tmp/conimgs/UFirS737rD8.jpg" data-lightbox="images" class="column"> <img
+                        src="[[++site_url]]/tmp/conimgs/UFirS737rD8.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title main-text has-text-black-bis">
+                <span>
+                    Мы в Вконтакте
+                </span>
+            </h2>
+            <div class="vkwall">
+                [[vkwall]]
+            </div>
+        </div>
+    </section>
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column"><img style="display: block; margin: 0 auto;"
+                        src="[[++site_url]]tmp/img2/tZ8Ii4QLOcI.jpg" alt=""></div>
+                <div class="column"> <b class="mc">Miss Chaplin Beauty Shop</b> – территория красоты для девушек любых возрастов, которые ценят качество и
+                    сервис beauty-услуг. У нас в студии вы сможете сделать качественный маникюр и педикюр, проработать со
+                    стилистом стрижку и окрашивание и просто провести время в приятной атмосфере, рядом с людьми, которые
+                    являются вашими единомышленниками в мире красоты. Вы можете быть уверены, что все услуги оказываются с
+                    учетом индивидуальных потребностей и особенностей нашего клиента
+                </p></div>
+            </div>
+        </div>
+    </section>
+    <div class="columns is-marginless is-paddingless">
+        <div class="column  is-hidden-mobile is-marginless is-paddingless">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A784bbe4dd53d47fa742054ad39f5d868b955554bcf59fd8104a30343d7bf030a&amp;source=constructor"
+                width="100%" height="601" frameborder="0"></iframe>
+        </div>
+        <div class="column">
+            <p class="my-6 main-text title has-text-black-bis">
+                <span>Оcтавить заявку</span>
+            </p>
+            <form action="post">
+                <div class="field">
+                    <label class="label">Имя</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Телефон</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="">
+                    </div>
+                </div>
+                <input type="submit" value="Отправить" class="button is-danger is-radiusless is-fullwidth">
+            </form>
+        </div>
+    </div>
+    [[$footer]]
+</body>
+<script src="[[++site_url]]/tmp/script.js"></script>
+
+</html>

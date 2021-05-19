@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <div class="preloader">
+        <img src="./img/logo2.png" alt="" srcset="">
+    </div>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="./img/logo2.png" alt="" srcset="">&nbsp;Sir Chaplin
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a href="#contact" class="navbar-item">Записаться к мастеру</a>
+                <a href="tel:+7 (903) 711-01-70" class="navbar-item">+7 (903) 711-01-70</a>
+            </div>
+        </div>
+      </nav>
+    <section class="hero is-fullheight is-black" style="position: relative;">
+        <video class="vbg" autoplay="autoplay" loop="loop" muted="muted" preload="auto">
+            <source src="vid/first_section_ready_min.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <source src="vid/first_section_ready_min.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+        </video>
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns main-col  is-vcentered">
+                    <div class="column has-text-centered">
+                        <span class="bbg is-size-1-desktop is-size-4-touch">
+                            BARBER SHOP
+                        </span>
+                    </div>
+                    <div class="column">
+                        <img class="x" src="./img/first_sextion_x.png" alt="">
+                    </div>
+                    <div class="column has-text-centered">
+                        <span class="bbg is-size-1-desktop is-size-4-touch">
+                            SIR CHAPLIN
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container">
+                <div class='icon-scroll'>
+                    <div>
+                    </div>
+                </div>
+    </section>
+    <div class="columns is-marginless">
+        <div class="column is-paddingless bg-s" style="background-image: url('./img/baner_k1.jpg');">
+            <!-- <div class="slider1">
+            <img src="./img/baner_k1.jpg" alt="" srcset="">
+            <img src="https://via.placeholder.com/800" alt="">
+        </div>-->
+
+        </div>
+        <div class="column px-6">
+            <p class="is-size-2 is-uppercase has-text-centered has-text-black-bis">
+                Мужская парикмахерская в Пушкино
+            </p>
+            <div class="bbg is-uppercase is-size-5">
+                Окунитесь в атмосферу первой половины 20 века
+            </div>
+            <p class="has-text-black-bis mt-2 arial is-size-7">
+                В наше время борода приобрела огромную популярность по всему миру. Это не просто естественное украшение,
+                а самый наилучший способ выразить свою индивидуальность и показать подлинную красоту представителей
+                сильного пола.
+                <br><br>
+                Отрастив бороду, человек встает перед глазами общества в совершенно ином свете и становится
+                олицетворением образа настоящего мужчины. Окружающие воспринимают обладателей такого лица более серьезно
+                и начинают наделять их такими качествами, как целеустремленность, воспитанность и надежность.
+                <br><br>
+                Придать лицу аккуратный вид и преобразить свой имидж вы сможете в нашем заведении, SIR CHAPLIN. Это не
+                просто мужская парикмахерская или же привычный для всех салон красоты, а своего рода клуб, где мужчины
+                могут расслабиться, привести себя в порядок и пропустить по бокалу хорошего виски в приятной компании
+                единомышленников.
+            </p>
+            <div class="hov-bg my-6">
+                <div class="back"></div>
+                <div class="in is-uppercase is-size-4 px-5 has-text-centered">
+                    Это идеальное место в пушкино для мужчин
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="section price-list" style="background-image: url('./img/third_section_ready.jpg');">
+        <div class="container">
+            <h1 class="title is-uppercase has-text-white has-text-centered is-size-1">
+                Прайс
+            </h1>
+            <div class="columns has-text-white is-centered">
+                <div class="column">
+                    <ul>
+                        <li><b>Мужская стрижка - 1000 р</b><br>Мытье, сушка</li>
+                        <li><b>Cтрижка машинкой - 600 р</b><br>Мытье, сушка</li>
+                        <li><b>Стрижка папа + сын(до 12 лет) - 1500 р</b><br>Мытье, сушка</li>
+                        <li><b>Детская стрижка - 700 р</b><br>Мытье, сушка</li>
+                        <li><b>Окантовка - 200 р</b><br>Мытье, сушка</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><b>Бритье Чаплина - 1000 р</b><br>Мытье, сушка</li>
+                        <li><b>Стрижка усов - 200 р</b><br>Мытье, сушка</li>
+                        <li><b>Стрижка бороды и усов - 600 р</b><br>Мытье, сушка</li>
+                        <li><b>Моделирование бороды опасной
+                                бритвой - 800 р</b><br>Мытье, сушка</li>
+
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+
+                        <li><b>Тонировка волос - 700 р</b><br>Мытье, сушка</li>
+                        <li><b>Тонировка бороды - 400 р</b><br>Мытье, сушка</li>
+                        <li><b>Коррекция бровей - 200 р</b><br>Мытье, сушка</li>
+                        <li><b>Мытье головы и укладка - 300 р</b><br>Мытье, сушка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section has-background-light">
+        <h2 class="title has-text-black-bis is-uppercase has-text-centered is-size-1">
+            Мастера
+        </h2>
+        <div class="columns">
+            <div class="column">
+                <div class="flip">
+                    <div class="inner">
+                        <div class="front" style="background-image: url('./img/sl2.png');">
+                            <div class="info">
+                                <div class="bbg is-size-4">
+                                    АЛЕКСАНДР
+                                </div>
+                                <span class="wbg">
+                                    Барбер
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back"
+                            style="background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 100%, rgba(255,255,255,0) 100%), url('./img/sl2.png') ;">
+                            <div class="info has-text-white">
+                                <p class="is-size-4">
+                                    Александр
+                                </p>
+                                <p>Делает лучшую мужскую стрижку в городе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="flip">
+                    <div class="inner">
+                        <div class="front" style="background-image: url('./img/sl1.png');">
+                            <div class="info">
+                                <div class="bbg is-size-4">
+                                    ДАЛЕР
+                                </div>
+                                <span class="wbg">
+                                    Барбер
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back"
+                            style="background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 100%, rgba(255,255,255,0) 100%), url('./img/sl1.png') ;">
+                            <div class="info has-text-white">
+                                <p class="is-size-4">
+                                    Далер
+                                </p>
+                                <p>Делает лучшую мужскую стрижку в городе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="flip">
+                    <div class="inner">
+                        <div class="front" style="background-image: url('./img/sl3.png');">
+                            <div class="info">
+                                <div class="bbg is-size-4">
+                                    ФЁДОР
+                                </div>
+                                <span class="wbg">
+                                    Барбер
+                                </span>
+                            </div>
+                        </div>
+                        <div class="back"
+                            style="background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 100%, rgba(255,255,255,0) 100%), url('./img/sl3.png') ;">
+                            <div class="info has-text-white">
+                                <p class="is-size-4">
+                                    ФЁДОР
+                                </p>
+                                <p>Делает лучшую мужскую стрижку в городе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-uppercase has-text-black-bis has-text-centered is-size-1">
+                Мы в соцсетях
+            </h1>
+            <div class="has-text-centered bbg">
+                ПОДПИСЫВАЙТЕСЬ В НАШУ ГРУППУ И БУДЬТЕ В КУРСЕ ВСЕХ НАШИХ АКЦИЙ
+            </div>
+            <p class="has-text-centered has-text-black-bis is-size-1">
+                <a href="https://vk.com/sir_chaplin" class="has-text-black-bis">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.instagram.com/sirchaplin_barbershop/" class="has-text-black-bis">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5">
+                    <div class="bblock has-text-centered">
+                        <p class="is-size-4">
+                            НАШ АДРЕС
+                        </p>
+                        <p>
+
+                            Моск. обл., г. Пушкино<br>
+                            ул. Тургенева, д. 13 <br>
+                            +7 (903) 711-01-70 <br>
+
+                        </p>
+                        <p class="is-size-4">
+                            РЕЖИМ РАБОТЫ
+                        </p>
+                        <p>
+
+                            Понедельник: 10:00 - 21:00<br>
+                            Вторник: 10:00 - 21:00<br>
+                            Среда: 10:00 - 21:00<br>
+                            Четверг: 10:00 - 21:00<br>
+                            Пятница: 10:00 - 21:00<br>
+                            Суббота: 10:00 - 21:00<br>
+                            Воскресенье: 10:00 - 21:00<br>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="bdblock">
+                        <p class="is-size-4 has-text-black-bis has-text-centered title">
+                            ОСТАВИТЬ ЗАЯВКУ
+                        </p>
+                        <form action="">
+                            <div class="field">
+                                <label class="label has-text-black-bis">Имя</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ваше имя">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label has-text-black-bis">Телефон</label>
+                                <div class="control">
+                                    <input class="input" type="tel" placeholder="Ваш телефон">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Ваше сообщение"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="submit" value="Отправить" class="button is-fullwidth">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e91b6149c168f0827fb19cb00f508c8788e61b38e8b238d28661e927dc840d1&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </section>
+    <section class="section has-background-black-bis has-text-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+                <ul>
+                    <li>&copy; Sir Chaplin Barbershop</li>
+                    <li>
+                        Моск. обл., г. Пушкино
+ул. Тургенева, д. 13
+                    </li>
+                    <li>
+                        <a href="tel:+7 (903) 711-01-70" class="has-text-white">+7 (903) 711-01-70</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column has-text-right">
+                <ul>
+                    <li>
+                        <a href="https://vk.com/sir_chaplin" class="has-text-white">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/sirchaplin_barbershop/" class="has-text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+<script src="./sctipt.js"></script>
+
+</html>
